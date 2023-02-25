@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="">
+ <title>contact us</title>
+ <style>
+ *{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box; 
+ background-color: antiquewhite; 
+ }
+ body{
+ width: 100%;
+ height: 100vh;
+ }
+ .container{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ padding: 20px 100px;
+ }
+ .container:after{
+ position: relative;
+ left: 0;
+ top: 0;
+ width: 400%;
+ height: 300%;
+ background:url("https://img.freepik.com/free-vector/online-application-call-taxi-service-by-smart-phone_1150-48822.jpg") no-repeat center;
+ background-size: cover;
+ filter: blur(50px);
+ }
+ .container-box{
+ max-width: 850px;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ }
+ .left{
+ height: 400px;
+ width: 500px;
+ background: url("https://img.freepik.com/free-vector/online-application-call-taxi-service-by-smart-phone_1150-48822.jpg") no-repeat center;
+ background-size:contain;
+ 
+ }
+ .right{
+ padding: 25px;
+ }
+ h2{position: relative;
+ padding-bottom: 10px;
+ margin-bottom: 10px;
+ }
+h2:after{
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ transform: translate(-50%);
+ height: 4px;
+ width: 50px;
+ border-radius:2px;
+ background-color: rgb(20, 20, 1);
+}
+.field{
+ width: 100%;
+ outline: none;
+ border: 2px solid rgba(0,0,0,0);
+ background-color: rba(230,230,0.6);
+ font-size: 1.1rem;
+ margin-bottom: 22px;
+ transition: 3sS;
+}
+.field:hover{
+ background-color: rgba(0,0,0,0.1);
+}
+.field:focus{
+ background-color: #ffffff;
+ border: 2px solid rgba(30,85,250.)
+}
+.area{
+ min-height: 150px;
+}
+
+ </style>
+</head>
+<body background-color="lightgreen">
+ <div class="container">
+ <div class="container-box">
+ <div class="left"></div>
+ <div class="right">
+ <h2>CONTACT US</h2>
+ <input type="text" class="field" placeholder="Your name"><br><br>
+ <input type="email" class="field" placeholder="You email"><br><br>
+ <input type="text" class="field" placeholder="Your phone"><br><br>
+ <textarea class="field" placeholder="Message"></textarea><br><br>
+ <input type="submit" class="field" placeholder="submit"><br><br><br><br><br>
+  <h2>CONTACT US ON</h2>
+ 
+ 
+ <a href="https://www.instagram.com/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" width="100px" height="70px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="https://web.whatsapp.com/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqEupjna_xIf5XTD5RqfjSowFG2HQM5gcLDw&usqp=CAU" width="100px" 
+height="70px"></a> &nbsp;&nbsp;
+ <a href="https://www.facebook.com/getting_started/"><img 
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAGE8ljXRyieCB8kw8Xirym_RYMXW2dkuwKg&usqp=CAU" 
+width="100px" height="70px"></a>
+ </div>
+ 
+
+ 
+
+ </div>
+</body>
+</html>

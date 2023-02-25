@@ -1,0 +1,176 @@
+
+<html>
+    <head>
+    <title>ll</title>
+
+    <style>
+       
+
+
+
+
+
+       .form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select, input[type="date"], input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e7b;
+
+}
+
+body {
+  background-image: url("https://www.mindinventory.com/blog/wp-content/uploads/2022/10/taxi-app-development1200.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+    </style>
+    
+</head>
+<body>
+  
+    <script>
+
+const form = document.getElementById('destination-form');
+const pickupSelect = document.getElementById('pickup');
+const destinationSelect = document.getElementById('destination');
+
+
+form.addEventListener('submit'), (e) => 
+  e.preventDefault(); 
+
+
+  const pickup = pickupSelect.value;
+  const destination = destinationSelect.value;
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
+  
+  
+  /*console.log(`Pickup: ${pickup}, Destination: ${destination}, Date: ${date}, Time: ${time}`);
+});*/
+
+
+
+function myFunction() {
+  alert("hi");
+}
+</script>
+
+
+    </script>
+    <div class="form-container">
+        <h2><b>TAXI BOOKING</b></h2>
+        <form id="destination-form">
+          <div class="form-group">
+            <label for="pickup">PICKUP LOCATION:</label>
+            <select id="pickup" name="pickup" required>
+              <option value="">Select a Location</option>
+              <option value="123 Main St">KUKATPALLY</option>
+              <option value="456 Elm St">MIYAPUR</option>
+              <option value="789 Oak St">LINGAMPALLY</option>
+              <option value="789 Oak St">GACHIBOWLI
+              </option>
+              <option value="789 Oak St">RTCX CROSSWORDS</option>
+              <option value="789 Oak St">NARSINGHI</option>
+              <option value="789 Oak St">UPPAL</option>
+              <option value="789 Oak St">SHAMSHABAD</option>
+              <option value="789 Oak St">VANASTHALIPURAM</option>
+              <option value="789 Oak St">MGBS</option>
+              <option value="789 Oak St">CHARMINAR</option>
+              <option value="789 Oak St">LANGERHOUSE</option>
+              <option value="789 Oak St">MADINAGUDA</option>
+              <option value="789 Oak St">KOTI</option>
+              <option value="789 Oak St">ASSEMBLY</option>
+              <option value="789 Oak St">DURGAMCHERUVU</option>
+              <option value="789 Oak St">KHAIRATHABAD</option>
+              <option value="789 Oak St">AMEERPET</option>
+              <option value="789 Oak St">HITECH CITY</option>
+              
+              
+              
+
+              
+            
+            
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="destination">DESTINATION:</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select an option</option>
+              <option value="123 Main St">KUKATPALLY</option>
+              <option value="456 Elm St">MIYAPUR</option>
+              <option value="789 Oak St">LINGAMPALLY</option>
+              <option value="789 Oak St">GACHIBOWLI
+              </option>
+              <option value="789 Oak St">RTCX CROSSWORDS</option>
+              <option value="789 Oak St">NARSINGHI</option>
+              <option value="789 Oak St">UPPAL</option>
+              <option value="789 Oak St">SHAMSHABAD</option>
+              <option value="789 Oak St">VANASTHALIPURAM</option>
+              <option value="789 Oak St">MGBS</option>
+              <option value="789 Oak St">CHARMINAR</option>
+              <option value="789 Oak St">LANGERHOUSE</option>
+              <option value="789 Oak St">MADINAGUDA</option>
+              <option value="789 Oak St">KOTI</option>
+              <option value="789 Oak St">ASSEMBLY</option>
+              <option value="789 Oak St">DURGAMCHERUVU</option>
+              <option value="789 Oak St">KHAIRATHABAD</option>
+              <option value="789 Oak St">AMEERPET</option>
+              <option value="789 Oak St">HITECH CITY</option>
+              
+              
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">DATE:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+          <button onclick="myfunction()"type="submit" id="submit-btn" >BOOKNOW</button>
+        </form>
+      </div>
+      
+    
+  </body>
+</html>
